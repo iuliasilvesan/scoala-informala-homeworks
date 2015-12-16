@@ -22,7 +22,7 @@ public class CarApplicationTest {
 	
 	@Test
 	public void checkShiftGear(){
-		Car car = new Polo(30,"Polo Chassis Number");
+		Car car = new Polo(32,"Polo Chassis Number");
 		car.setCurrentGear(2);
 		car.shiftGear(4);
 		Assert.assertEquals(4,car.getCurrentGear());
