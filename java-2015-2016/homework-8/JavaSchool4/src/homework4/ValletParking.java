@@ -16,7 +16,7 @@ public class ValletParking<T extends Vehicle> {
 	private final static int PARKING_SIZE = 100;
 	// creates the park as an array with a fixed dimension given by
 	// the value of PARKING_SIZE
-	private Vehicle park[] = new Vehicle[PARKING_SIZE];
+	private Vehicle park[] = new Vehicle[PARKING_SIZE];// TODO CODE REVIEW: Why not T park[]?
 
 	/**
 	 * This method is created to park the vehicle in an empty parking spot and

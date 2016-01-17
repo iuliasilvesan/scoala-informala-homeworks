@@ -128,7 +128,9 @@ public class CarApplicationTest {
 
 	@Test
 	public void checkRetrieveVehicle() {
-
+		/* TODO CODE REVIEW: I was expecting more test. First of all the one defined in the homework.assert amountOfFuelAfterParking < amountOfFuelBeforeParking;
+		 What about adding cars when there is no more space? or trying to reuse a ticket?
+		 */ 
 		Motorcycle motor = new Shadow(10, "Shadow Chassis Number");
 		ParkingTicket<Integer, Motorcycle> ticket = park.parkVehicle(motor);
 		Assert.assertEquals(motor, ticket.getVehicle());
